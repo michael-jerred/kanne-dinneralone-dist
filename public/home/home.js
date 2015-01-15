@@ -31,7 +31,9 @@ var App;
                 var top = $('body>div>div').position().top;
                 var fullheight = this.$window.innerHeight;
 
-                this.imageHeight = fullheight - top - 2;
+                var h = fullheight - top - 2;
+                if (h > 300)
+                    this.imageHeight = h;
             };
             Controller.$inject = ['$scope', '$window'];
             return Controller;
