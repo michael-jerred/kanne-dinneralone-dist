@@ -1,5 +1,12 @@
-nav li > a {
-  color: transparent;
-  text-shadow: 0 0 1px #bc8761; }
+nav.navbar-default {
+  border: none; }
+  nav.navbar-default li > a {
+    color: transparent;
+    text-shadow: 0 0 1px #bc8761; }
+    nav.navbar-default li > a:hover {
+      text-shadow: 0 0 1px #ac7751; }
+
+.no-hover-color:hover, .no-hover-color:focus {
+  background-color: transparent !important; }
 
 /*# sourceMappingURL=navigation.css.map */

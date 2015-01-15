@@ -16,9 +16,24 @@ var App;
             }]);
 
         var Controller = (function () {
-            function Controller() {
-                this.test = 'working!';
+            function Controller($scope, $window) {
+                var _this = this;
+                this.$scope = $scope;
+                this.$window = $window;
+                $($window).resize(function () {
+                    _this.calculateImageHeight();
+                    $scope.$apply();
+                });
+
+                this.calculateImageHeight();
             }
+            Controller.prototype.calculateImageHeight = function () {
+                var top = $('body>div>div').position().top;
+                var fullheight = this.$window.innerHeight;
+
+                this.imageHeight = fullheight - top - 2;
+            };
+            Controller.$inject = ['$scope', '$window'];
             return Controller;
         })();
     })(App.Home || (App.Home = {}));
