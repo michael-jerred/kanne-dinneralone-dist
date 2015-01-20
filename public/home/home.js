@@ -26,7 +26,14 @@ var App;
                 });
 
                 this.calculateImageHeight();
+
+                // get random image.
+                this.imageNumber = Math.floor(1 + Math.random() * 4);
             }
+            Controller.prototype.imageName = function () {
+                return this.imageHeight > 450 ? 'img_' + this.imageNumber + '-2x.jpg' : 'img_' + this.imageNumber + '.jpg';
+            };
+
             Controller.prototype.calculateImageHeight = function () {
                 var top = $('body>div>div').position().top;
                 var fullheight = this.$window.innerHeight;
