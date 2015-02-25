@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,kBAAmB;EAEf,MAAM,EAAE,IAAI;EAEX,yBAAO;IACJ,KAAK,EAAE,WAAW;IAClB,WAAW,EAAE,eAAe;IAE5B,+BAAQ;MACJ,WAAW,EAAE,eAAe;;AAOpC,4CAAiB;EACb,gBAAgB,EAAE,sBAAsB",
+"mappings": "AAAA,kBAAmB;EAEf,MAAM,EAAE,IAAI;EAEX,yBAAO;IACJ,KAAK,EAAE,WAAW;IAClB,WAAW,EAAE,iBAAiB;IAE9B,+BAAQ;MACJ,WAAW,EAAE,iBAAiB;;AAOtC,4CAAiB;EACb,gBAAgB,EAAE,sBAAsB",
 "sources": ["../../client/navigation/navigation.scss"],
 "names": [],
 "file": "navigation.css"
